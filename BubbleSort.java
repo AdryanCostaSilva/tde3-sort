@@ -1,7 +1,7 @@
 public class BubbleSort {
-    private int interacao;
+    private int iteracao;
     private int trocas;
-    private int tempo;
+    private long tempo;
 
     public BubbleSort(){}
 
@@ -29,6 +29,11 @@ public class BubbleSort {
         }
         long fim = System.nanoTime();
         long tempo = fim - inicio;
+
+        this.iteracao = iteracao;
+        this.trocas = trocas;
+        this.tempo = tempo;
+
         System.out.println("--- Bubble com Flag --- ");
         System.out.println("Iterações: " + iteracao);
         System.out.println("Trocas: " + trocas);
@@ -36,10 +41,10 @@ public class BubbleSort {
     }
 
     public int getInteracao() {
-        return interacao;
+        return iteracao;
     }
 
-    public int getTempo() {
+    public long getTempo() {
         return tempo;
     }
 
