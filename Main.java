@@ -54,6 +54,33 @@ public class Main {
         System.out.println("---Vetor 3---");
         ss.sort(20, copiaSelectionSort3);
         printArray(copiaSelectionSort3);
+
+
+        CockTailSort ct = new CockTailSort();
+
+        int[] copiaCockTail1 = copia(vetor1);
+        int[] copiaCockTail2 = copia(vetor2);
+        int[] copiaCockTail3 = copia(vetor3);
+
+        System.out.println(" ");
+
+        System.out.println("===========CockTail Sort===========\n");
+
+        System.out.println("---Vetor 1---");
+        ct.sort(20, copiaCockTail1);
+        printArray(copiaCockTail1);
+
+        System.out.println(" ");
+
+        System.out.println("---Vetor 2---");
+        ct.sort(20, copiaCockTail2);
+        printArray(copiaCockTail2);
+
+        System.out.println(" ");
+
+        System.out.println("---Vetor 3---");
+        ct.sort(20, copiaCockTail3);
+        printArray(copiaCockTail3);
     }
 
     static void printArray(int[] vetor) {
