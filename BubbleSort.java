@@ -34,7 +34,6 @@ public class BubbleSort {
         this.trocas = trocas;
         this.tempo = tempo;
 
-        System.out.println("--- Bubble com Flag --- ");
         System.out.println("Iterações: " + iteracao);
         System.out.println("Trocas: " + trocas);
         System.out.println("Tempo de execução: " + tempo + " ns");
