@@ -81,6 +81,34 @@ public class Main {
         System.out.println("---Vetor 3---");
         ct.sort(20, copiaCockTail3);
         printArray(copiaCockTail3);
+
+
+        CombSort cs = new CombSort();
+
+        int[] combSort1 = copia(vetor1);
+        int[] combSort2 = copia(vetor2);
+        int[] combSort3 = copia(vetor3);
+
+        System.out.println(" ");
+
+        System.out.println("===========Comb Sort===========\n");
+
+        System.out.println("---Vetor 1---");
+        cs.sort(20, combSort1);
+        printArray(combSort1);
+
+        System.out.println(" ");
+
+        System.out.println("---Vetor 2---");
+        cs.sort(20, combSort2);
+        printArray(combSort2);
+
+        System.out.println(" ");
+
+        System.out.println("---Vetor 3---");
+        cs.sort(20, combSort3);
+        printArray(combSort3);
+
     }
 
     static void printArray(int[] vetor) {
