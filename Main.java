@@ -109,6 +109,33 @@ public class Main {
         cs.sort(20, combSort3);
         printArray(combSort3);
 
+
+        GnomeSort gs = new GnomeSort();
+
+        int[] gnomeSort1 = copia(vetor1);
+        int[] gnomeSort2 = copia(vetor2);
+        int[] gnomeSort3 = copia(vetor3);
+
+        System.out.println(" ");
+
+        System.out.println("===========Gnome Sort===========\n");
+
+        System.out.println("---Vetor 1---");
+        gs.sort(20, gnomeSort1);
+        printArray(gnomeSort1);
+
+        System.out.println(" ");
+
+        System.out.println("---Vetor 2---");
+        gs.sort(20, gnomeSort2);
+        printArray(gnomeSort2);
+
+        System.out.println(" ");
+
+        System.out.println("---Vetor 3---");
+        gs.sort(20, gnomeSort3);
+        printArray(gnomeSort3);
+
     }
 
     static void printArray(int[] vetor) {
