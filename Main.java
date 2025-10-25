@@ -16,11 +16,19 @@ public class Main {
         bs.bubbleFlag(20, copiaBubble1);
         printArray(copiaBubble1);
 
+        System.out.println("Iterações: " + bs.getInteracao());
+        System.out.println("Trocas: " + bs.getTrocas());
+        System.out.println("Tempo de execução: " + bs.getTempo() + " ns");
+
         System.out.println(" ");
 
         System.out.println("---Vetor 2---");
         bs.bubbleFlag(20, copiaBubble2);
         printArray(copiaBubble2);
+
+        System.out.println("Iterações: " + bs.getInteracao());
+        System.out.println("Trocas: " + bs.getTrocas());
+        System.out.println("Tempo de execução: " + bs.getTempo() + " ns");
 
         System.out.println(" ");
 
@@ -28,6 +36,9 @@ public class Main {
         bs.bubbleFlag(20, copiaBubble3);
         printArray(copiaBubble3);
 
+        System.out.println("Iterações: " + bs.getInteracao());
+        System.out.println("Trocas: " + bs.getTrocas());
+        System.out.println("Tempo de execução: " + bs.getTempo() + " ns");
 
         SelectionSort ss = new SelectionSort();
 
@@ -135,6 +146,33 @@ public class Main {
         System.out.println("---Vetor 3---");
         gs.sort(20, gnomeSort3);
         printArray(gnomeSort3);
+
+
+        BucketSort bus = new BucketSort();
+
+        int[] bucketSort1 = copia(vetor1);
+        int[] bucketSort2 = copia(vetor2);
+        int[] bucketSort3 = copia(vetor3);
+
+        System.out.println(" ");
+
+        System.out.println("===========Bucket Sort===========\n");
+
+        System.out.println("---Vetor 1---");
+        bus.sort(20, bucketSort1);
+        printArray(bucketSort1);
+
+        System.out.println(" ");
+
+        System.out.println("---Vetor 2---");
+        bus.sort(20, bucketSort2);
+        printArray(bucketSort2);
+
+        System.out.println(" ");
+
+        System.out.println("---Vetor 3---");
+        bus.sort(20, bucketSort3);
+        printArray(bucketSort3);
 
     }
 
